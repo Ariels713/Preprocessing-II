@@ -57,19 +57,18 @@
       width: 30%;
       margin-bottom: 30px;
     }
+      .pageButton {
+        .site_buttons_desktop(15px, @button-desktop, @main-bg)
+      }
 
-    .pageButton {
-      width: 195px;
-      height: 39px;
-      background-color: @button-desktop;
-      color: @main-bg;
-      font-size: 1.5em;
-      border-radius: 15px;
-      border: none;
-    }
+
 
 
   }
 
-
 }// home
+
+@media (max-width:750px) {
+  display: flex;
+  flex-direction: row;
+}

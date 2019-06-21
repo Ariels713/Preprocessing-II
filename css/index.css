@@ -1,3 +1,5 @@
+@desktop (max-width: 800px);
+@tablet (max-width: 750px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -265,9 +267,13 @@ img {
 .home .content-pick .pageButton {
   width: 195px;
   height: 39px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 15px;
   background-color: #008080;
   color: #FFFFFF;
-  font-size: 1.5em;
-  border-radius: 15px;
-  border: none;
+}
+@media (max-width: 750px) {
+  display: flex;
+  flex-direction: row;
 }
