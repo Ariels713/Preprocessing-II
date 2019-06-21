@@ -137,6 +137,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  padding: 5px;
 }
 h1,
 h2,
@@ -197,6 +198,26 @@ img {
   width: 577px;
   height: 63px;
 }
+@media (max-width: 510px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 105px;
+  }
+  .navigation .navigation {
+    height: 110px;
+  }
+  .navigation .funBus {
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .navigation .navItems {
+    display: flex;
+    order: 2;
+  }
+}
 .busPhoto {
   display: flex;
   width: 100%;
@@ -224,12 +245,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 750px) {
-  .home .content-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -240,6 +255,21 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
