@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media (max-width:750px) {
+      display: flex;
+      flex-direction: column;
+    }
 
 
     .text-content {
@@ -68,7 +72,3 @@
 
 }// home
 
-@media (max-width:750px) {
-  display: flex;
-  flex-direction: row;
-}

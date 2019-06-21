@@ -224,6 +224,12 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 750px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -272,8 +278,4 @@ img {
   border-radius: 15px;
   background-color: #008080;
   color: #FFFFFF;
-}
-@media (max-width: 750px) {
-  display: flex;
-  flex-direction: row;
 }
